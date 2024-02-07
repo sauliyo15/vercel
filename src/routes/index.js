@@ -9,7 +9,7 @@ app.get('/api', (req, res) => {
     res.send('Esto es la API, de aquí vendran los datos');
 });
 
-router.get('*', (req, res) =>{
+app.get('*', (req, res) =>{
     res.send('Recurso no encontrado');
 });
 
